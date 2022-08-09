@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+       
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+
+        }
+        .especial::before {
+           content: '>>';
+           font-weight: lighter;
+        }
+
+        .especial::after {
+            content: '<<';
+            font-weight: lighter;
+        }
+
+        #legal::after {
+            content: "<< LEGAL!! >> :)";
+            color: red;
+            font-weight: bold;
+        }
+
+        #chato::before {
+            content: "<< CHATO >> :(";
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando pseudo-elementos</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_black">Repositório GitHub</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoEmVídeo</a></li>
+        <li><a href="http://www.youtube.com/cursoemvideo" target="_blank" class="especial">Canal do YouTube</a></li>
+    </ul>
+    <p id="legal">Este é um parágrafo legal! Por isso, esta identificação está vermelha e em negrito</p>
+    <p id="chato">Este é um paragrafo chato! Por isso, esta identificação está azul e em itálico</p>
+</body>
+</html>

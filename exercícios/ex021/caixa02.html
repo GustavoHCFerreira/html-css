@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            background-color: #cccccc;
+            margin: 10px;
+            padding: 2px;
+            border: 2px solid red;
+        }
+
+        header > h1 {
+           text-align: center;
+        }
+
+        nav {
+            box-shadow: 4px 3px 1px 1px rgba(0, 0, 0, 0.373);
+            margin: 4px;
+            padding: 2px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        nav > a {
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 5px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: #bbbbbb;
+            border: 2px solid red;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        section {
+            margin: 4px;
+            border: 2px solid green;
+        }
+
+        article {
+            border: 2px solid black;
+            padding: 2px;
+            margin: 10px;
+        }
+
+       
+        img {
+            width: 300px;
+        }
+
+    
+        footer {
+            background-color: #cccccc;
+            text-align: center;
+            font-size: 14px;
+            border: 2px solid red;
+            margin: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+            padding: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Meu Site de Notícias</h1>
+       <nav>
+            <a href="#">Tecnologia</a>
+            <a href="#">Finanças</a>
+            <a href="#">Esportes</a>
+            <a href="#">Entretenimento</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tecnologia">
+            <h2>Artigos sobre Tecnologia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum consectetur laborum, commodi et obcaecati veniam iure placeat dolorum enim dolores cupiditate, non sed libero animi ratione! Saepe tenetur repellendus eaque.</p>
+            <article>
+                <h2>Guerra dos Browsers</h2>
+                <p>Artigo sobre a guerra dos browsers na história da internet</p>
+                <img src="browsers.png" alt="Guerra dos Browsers">
+                <aside>
+                    <p>Escrito por João Ribeiro</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Linguagens de Programação</h2>
+                <p>Vamos descrever as principais linguagens de programação existentes no mercado.</p>
+                <aside>
+                    <p>Escrito por Julia Morais</p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="financas">
+            <h2>Artigos sobre Finanças</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore itaque architecto, a distinctio adipisci possimus recusandae eveniet minima libero et aspernatur amet doloribus in iure illum culpa, pariatur repellat nam?</p>
+            <img src="financas.png" alt="Mercado Financeiro">
+            <article>
+                <h2>Lucros dos bancos batem recorde no segundo semestre</h2>
+                <p>Os grandes brancos são BB, Bradesco, Itaú, Santander e Caixa</p>
+                <img src="bancos.jpg" alt="Bancos">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Site de Notícias Criado por Gustavo Ferreira</p>
+    </footer>
+</body>
+</html>
