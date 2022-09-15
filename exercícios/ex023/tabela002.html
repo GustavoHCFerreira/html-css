@@ -12,14 +12,32 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         td.num {
             text-align: right;
@@ -27,10 +45,12 @@
     </style>
 </head>
 <body>
+    <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px">População</th>
         </thead>
         <tbody>
             <tr>
@@ -142,9 +162,20 @@
                 <td class="num">652.713</td>
             </tr>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td class="num"><strong>213.317.649</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum harum ex ratione dicta quas aspernatur delectus suscipit unde rerum praesentium iste, sapiente, ab consequatur numquam nam officiis asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum quibusdam harum officia minima voluptatem qui iure rerum dignissimos odit maxime consequatur itaque laudantium, sint, blanditiis voluptate, alias sunt tempore!</p>
 </body>
 </html>
