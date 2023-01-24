@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+        td, th, caption {
+            padding: 10px;
+        }
+        .verde {
+            background-color: limegreen;
+        }
+        .amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas - usando colgroup</h1>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="verde" span="2">
+        </colgroup>
+        <caption>
+            Usando o recurso colgroup
+        </caption>
+        <thead>
+           <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>F</td>
+                <td>Arquiteta</td>
+            </tr>
+            <tr>
+                <td>Joel</td>
+                <td>M</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Jéssica</td>
+                <td>F</td>
+                <td>Analista de Sistemas</td>
+            </tr>
+            <tr>
+                <td>Roberto</td>
+                <td>M</td>
+                <td>Bancário</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
